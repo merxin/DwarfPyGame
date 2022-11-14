@@ -73,12 +73,12 @@ class Game:
             dog.draw(screen)
             dog.update()
             collision_catch()
+            game.display_score()
             pygame.display.update()
             if len(chicken) == 0:
                 self.level += 1
                 self.state = 'intro'
 
-            game.display_score()
 
 # game over screen
     def game_over(self):
